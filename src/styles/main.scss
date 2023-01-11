@@ -1,0 +1,60 @@
+@import "./fonts";
+
+@import "./pages/home";
+@import "./pages/projects";
+@import "./pages/project";
+@import "./pages/services";
+@import "./pages/about-us";
+@import "./pages/contact";
+@import "./components/menu";
+@import "./components/footer";
+@import "./components/map";
+@import "./components/play";
+@import "react-slideshow-image/dist/styles.css";
+@import 'react-modal-video/scss/modal-video.scss';
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Montserrat", sans-serif !important;
+}
+
+html {
+	color: white;
+	background-color: black;
+	height: 100%;
+	font-size: 16px;
+}
+
+.app-container {
+	height: auto;
+	position: relative;
+}
+
+.align-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.no-decoration {
+	text-decoration: none !important;
+}
+
+.hidden {
+	display: none;
+}
+
+.background-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+@media screen and (max-width: 769px) {
+	.background-cover {
+		background-attachment: scroll;
+	}
+}

@@ -1,0 +1,176 @@
+.project-page-wrapper {
+	height: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	h1 {
+		font-family: "Montserrat-Bold", Sans-serif;
+		font-size: 7rem;
+		padding-top: 10px;
+	}
+	h2 {
+		font-size: 3rem;
+		font-family: "Montserrat-Regular", Sans-serif;
+		padding: 10px 0px;
+		font-weight: 400;
+	}
+	span {
+		font-size: 23px;
+		line-height: 1.5em;
+		letter-spacing: 0.5px;
+		margin-bottom: 25px;
+		font-weight: 400;
+	}
+}
+
+.project-page-content {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.info-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.info-page-intro {
+	// border: 1px solid red;
+	min-height: 680px;
+	height: 100vh;
+	flex-direction: column;
+	align-items: flex-start !important;
+}
+
+.scroll-gif-projects {
+	cursor: pointer;
+	position: sticky;
+	left: calc(50% - 37.5px);
+	top: calc(100vh - 85px);
+	height: 75px;
+	width: 75px;
+}
+
+.client-section-wrapper {
+	min-height: 100vh;
+	max-width: 900px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-top: 20vh;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.project-footer {
+	padding-top: 15vh;
+	width: 100%;
+	align-self: flex-end;
+}
+
+.carousel-written-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	line-height: 40px;
+	width: 45%;
+	min-height: 500px;
+	font-size: 1.4rem;
+	overflow-wrap: anywhere;
+
+	.company-name {
+		font-size: 2rem;
+	}
+
+	.project-call-to-action{
+		padding-top: 15px;
+	}
+
+	a {
+		color: white;
+		font-weight: 600;
+	}
+}
+
+.carousel-container {
+	z-index: 0;
+	width: 45%;
+	height: 500px;
+}
+
+hr.solid {
+	border-top: 1px solid black;
+	width: 80%;
+}
+
+.carousel-status {
+	display: none;
+}
+
+.thumb {
+	border: none !important;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.selected {
+	cursor: pointer;
+}
+
+.description-wrapper {
+	max-width: 600px;
+}
+
+@media only screen and (max-width: 800px) {
+	.info-page-intro {
+		width: 95%;
+		br {
+			display: none;
+		}
+		h1 {
+			font-size: 15vw;
+		}
+		h2 {
+			font-size: 7vw;
+		}
+		span {
+			font-size: 1.3rem;
+		}
+	}
+
+	.carousel-written-content {
+		font-size: 1rem;
+		font-weight: bold;
+
+		.company-name {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 615px) {
+	hr.solid {
+		border-top: 1px solid black;
+		width: 100%;
+	}
+	.client-section-wrapper {
+		justify-content: center;
+		flex-direction: column;
+		width: 95% !important;
+	}
+	.carousel-written-content {
+		width: 100%;
+		font-size: 1rem;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.carousel-container {
+		width: 80%;
+		height: auto;
+	}
+
+	.project-company-info{
+		margin: 50px 0;
+	}
+}
